@@ -1,0 +1,151 @@
+@font-face{
+    font-family: game;
+    src: url(backsteal/Backsteal-Regular.otf);
+}
+
+@keyframes borda{
+    0%{
+        border: 5px solid rgba(2,0,36,1);
+        transition: 0.5s;
+    }
+    50%{
+        border: 5px solid rgba(0,255,2,1);
+        transition: 0.5s;
+    }
+    100%{
+        border: 5px solid rgba(9,9,121,1);
+        transition: 0.5s;
+    }
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#Entrar{
+    color: white;
+}
+
+.Titulo{
+    font-family: game;
+    margin: 20px;
+    color: rgba(0,255,2,1);
+}
+
+h2, h3{
+    font-family: game;
+    margin: 20px;
+    color: rgba(0,255,2,1);
+    border-radius: 5px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+body{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    margin: 0px 6px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 2px;
+}
+
+.esqueciSenha{
+    color: red;
+}
+
+.Logar, .cadastrar{
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    color: rgba(0,255,2,1);;
+    border-radius: 5px;
+    height: 10px;
+    padding: 5px;
+    font-family: game;
+    
+}
+
+input::placeholder{
+    color: red; 
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 90px;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: game;
+}
+
+label{
+    padding: 10px;
+    color: #F75C03;
+    margin: 5px;
+}
+
+.destaque{
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);  
+    width: 370px;
+    padding: 50px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    font-size: 16pt;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+button{
+    width: 110px;
+    height: 30px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: #F75C03;
+    color: white;
+}
+
+button:hover{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(8, 209, 8);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+input:focus{
+    width: 300px;
+    height: 40px;
+    transition: 0.5s;
+    background-color: rgb(202, 136, 61);
+    animation: borda 1.5 infinite
+}

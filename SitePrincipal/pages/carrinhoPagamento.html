@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiHashi</title>
+    <link rel="stylesheet" href="../styles/carrinho.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img id="sushi" src="../images/icone.png" style="width: 4rem;" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html"><img class="home" src="../images/home.png" alt=""></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo de Produtos</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="sobreNos.html">Sobre Nós</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="carrinhoPagamento.html"><img src="../images/car.png" class="Car" alt=""></a>
+                      </li>
+                      <li>
+                        <a class="nav-link logout" href="../../Login/index.html">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main>
+            <div id="Checkout">
+              <div id="Super">
+                <h2>Meu Carrinho</h2> 
+                <img src="../images/car2.png" id="car2" alt="">
+              </div>
+              <div id="Conteudos" class="d-flex">
+                <div id="Endereco">
+                  <div class="InfoPaga">
+                    <h4>Informações de Entrega</h4>
+                  </div>
+                    <form action="">
+                        <label for="cidade">Cidade</label>
+                        <select  id="cidade">
+                          <option value="BSB">Brasília</option>
+                          <option value="LGS">Lago Sul</option>
+                          <option value="LGN">Lago Norte</option>
+                          <option value="SS">São Sebastião</option>
+                          <option value="GU">Guará</option>
+                          <option value="TA">Taguatinga</option>
+                          <option value="AG">Águas Claras</option>
+                          <option value="PW">Park Way</option>
+                        </select>
+
+                        <label for="quadra">Quadra</label>
+                        <input type="text" id="quadra" placeholder="Quadra">
+
+                        <label for="casa">Nº Casa</label>
+                        <input type="text" id="casa" placeholder="Nº Casa">
+
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" placeholder="Seu bairro*">
+
+                        <label for="telefone">Telefone</label>
+                        <input type="number" id="telefone" placeholder="Número de Telefone*">
+                    </form>
+                </div>
+                <div id="Pagamento">
+                  <h4  class="InfoPaga">Forma de Pagamento</h4>
+                  <h5 id="respCompra"></h5>
+                  <div id="Cartao">
+                      <form action="">
+                        <fieldset>
+                            <label for="formaPagamento"><h4>Escolha a forma de Pagamento</h4></label><br><br>
+                            Débito<input class="Pague" type="radio" name="formaPagamento" value="debito">
+                            Crédito<input class="Pague" type="radio" name="formaPagamento" value="credito">
+                            Boleto<input class="Pague" type="radio" name="formaPagamento" value="boleto">
+                            Pix<input class="Pague" type="radio" name="formaPagamento" value="pix">
+                        </fieldset>
+
+                        <img  src="../images/formasPagamento.png" alt="">
+                        
+                        <div id="botoes">
+                          <button id="cancelar" type="reset">Cancelar</button>
+                          <button id="comprar" type="button">Comprar</button>
+                        </div>
+                        
+                      </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-3">
+          <h4 id="rodape">Todos os direitos reservados a @SushiHashi</h4>
+        </footer>
+    </div>
+    
+
+    <script src="../JavaScript/script2.js"></script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
