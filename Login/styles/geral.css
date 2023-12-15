@@ -149,3 +149,7 @@ input:focus{
     background-color: rgb(202, 136, 61);
     animation: borda 1.5 infinite
 }
+
+#Redefinir{
+    height: 36px;
+}
