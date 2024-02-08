@@ -15,7 +15,7 @@ function VeriCombo(){
         setTimeout(function(){
             let resposta = confirm('Ir para o carrinho de compras?')
             if (resposta){
-                window.location.href = 'http://127.0.0.1:5500/SitePrincipal/pages/carrinhoPagamento.html'
+                window.location.href = 'https://vandersonrecruta.github.io/SushiHashi/SitePrincipal/pages/carrinhoPagamento.html'
             }
         }, 200)
     }
@@ -38,7 +38,7 @@ function VeriSalmao(){
         setTimeout(function(){
             let resposta = confirm('Ir para o carrinho de compras?')
             if (resposta){
-                window.location.href = 'http://127.0.0.1:5500/SitePrincipal/pages/carrinhoPagamento.html'
+                window.location.href = 'https://vandersonrecruta.github.io/SushiHashi/SitePrincipal/pages/carrinhoPagamento.html'
             }
         }, 200)
     }
@@ -61,7 +61,7 @@ function VeriTemaki(){
         setTimeout(function(){
             let resposta = confirm('Ir para o carrinho de compras?')
             if (resposta){
-                window.location.href = 'http://127.0.0.1:5500/SitePrincipal/pages/carrinhoPagamento.html'
+                window.location.href = 'https://vandersonrecruta.github.io/SushiHashi/SitePrincipal/pages/carrinhoPagamento.html'
             }
         }, 200)
     }
@@ -86,7 +86,7 @@ function VeriBarca(){
         setTimeout(function(){
             let resposta = confirm('Ir para o carrinho de compras?')
             if (resposta){
-                window.location.href = 'http://127.0.0.1:5500/SitePrincipal/pages/carrinhoPagamento.html'
+                window.location.href = 'https://vandersonrecruta.github.io/SushiHashi/SitePrincipal/pages/carrinhoPagamento.html'
             }
         }, 200)
         

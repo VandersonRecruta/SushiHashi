@@ -23,7 +23,7 @@ function VeriCompra() {
             respCompra.innerHTML = ''
             let resposta = confirm('Poderia nos avaliar?')
             if (resposta){
-            window.location.href = 'http://127.0.0.1:5500/SitePrincipal/pages/pesquisa.html';
+            window.location.href = 'https://vandersonrecruta.github.io/SushiHashi/SitePrincipal/pages/pesquisa.html';
             } 
         }, 800)
     }
